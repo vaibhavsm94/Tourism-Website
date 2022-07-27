@@ -1,0 +1,100 @@
+<html>
+<head>
+<link rel="shortcut icon" href="img\mmt.jpg" type="image/jpg">
+
+<title> SignUp-MakeMyTrip </title>
+
+<script type="text/javascript">
+
+ function svalid()
+{
+ 	var em=document.getElementById("s3").value;
+	var fn=document.getElementById("s1").value;
+	var ln=document.getElementById("s2").value;
+	var p1=document.getElementById("s4").value;
+	var p2=document.getElementById("s5").value;
+
+	if(!(fn.match(/^\w+/)))
+	{
+		alert("Invalid First name");
+	}
+	else if(!(ln.match(/^\w+/)))
+	{
+		alert("Invalid Last name");
+	}
+ 	else if(!(em.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)))
+	{
+		alert("Invalid Email address");
+	}
+	else if(p1.length<8)
+	{
+		alert("Invalid password");
+	}
+	else if(p1!=p2)
+	{
+		alert("Passwords don't match");
+	}
+	else
+	{
+		alert("Successful signup");
+		window.open("login.html","_parent");
+		
+	}
+}
+
+	function Pword(i)
+	{
+		i.type="password";
+	}
+	
+	function inputFocus(i)
+	{
+		if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+		}
+		function inputBlur(i)
+	{
+		if(i.value==""){ i.value=i.defaultValue; i.style.color="lightgrey";}
+	}
+	function inputBlur1(i)
+	{
+		if(i.value==""){i.type="text"; i.value=i.defaultValue; i.style.color="lightgrey";}
+	}
+	
+</script>
+<style>
+body {
+    background: url("wt6.jpg");
+    background-size: 1380px 675px;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+}
+</style>
+</head>
+
+<body align="center" >
+
+<img src="img\mmtr.jpg">
+</br>
+</br>
+<fieldset>
+<legend><h3><b>Welcome! Please Enter Your Details</b></h3></legend><br/>
+<form method="POST" action="http://localhost/cgi-bin/su.cgi">
+<table align="center">
+<tr><td> <b>First Name:</b></td><td> <input style="color:lightgrey" id="s1" type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)" Placeholder="Only alphabets" size="30" name="fn"></td></tr>
+<tr><td><br/></td></tr>
+<tr><td> <b>Last Name:</b></td><td> <input style="color:lightgrey" id="s2" type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)" Placeholder="Only alphabets" size="30" name="ln"></td></tr>
+<tr><td><br/></td></tr>
+<tr><td><b> Email Id:</b></td><td> <input style="color:lightgrey" id="s3" type="text" onfocus="inputFocus(this)" onblur="inputBlur(this)" Placeholder="Enter your EmailId" size="30" name="email"></td></tr>
+<tr><td><br/></td></tr>
+<tr><td> <b>Password:</b></td><td> <input style="color:lightgrey" id="s4" type="password" onfocus="inputFocus(this)" onblur="inputBlur(this)" onclick="Pword(this)" Placeholder="Atleast 8 characters" size="30" name="password"></td></tr>
+<tr><td><br/></td></tr>
+<tr><td> <b>Confirm Password:</b></td><td> <input style="color:lightgrey" id="s5" type="password" onfocus="inputFocus(this)" onblur="inputBlur(this)" onclick="Pword(this)" size="30"></td></tr>
+<tr><td><br/></td></tr>
+</table>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="submit" value="SignUp" onclick="svalid()" name="submit">
+</form>
+</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<script type="text/javascript">
+
+function act()
+{
+	var x = document.getElementById("acity").value;
+	if(x.match("Srinagar"))
+		window.open("sri.html","main");
+	else
+		window.open("mys.html","main");
+	
+}
+</script>
+
+<style>
+.box{
+border: 1px solid black;
+}
+</style>
+<body background="img\actvm.jpg">
+
+<form>
+
+<!-- <input type="radio" name="a" value="Srinagar" id="c1" />Srinagar<br/>
+<input type="radio" name="a" value="Goa" id="c2" />Goa<br/>
+<input type="radio" name="a" value="Mysore" id="c3" />Mysore<br/>
+<input type="radio" name="a" value="Darjeeling" id="c4" />Darjeeling<br/> -->
+
+
+<fieldset  style="width:250px">
+<legend><b><center>Activity</center></b></legend>
+<table cellpadding=10>
+<tr><td><b>City Name:</b></td><td><select id="acity">
+  <option value="Srinagar">Srinagar</option>
+<!--  <option value="Goa">Goa</option> -->
+  <option value="Mysore">Mysore</option>
+<!--  <option value="Darjeeling">Darjeeling</option> -->
+</select></td></tr>
+</table>
+<br/>
+<center><input type="button" value="Submit" onclick="act()"></center>
+</fieldset>
+
+
+</form>
+</body>
+
+</html>

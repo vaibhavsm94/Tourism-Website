@@ -1,0 +1,5 @@
+au{ font-size:30px;color:black;font-weight:bold;}
+head { display:block; color:silver; font-style:italic; font-size:20px;  white-space:pre;}
+info1,info,member1,member2,member3{ display:block; color:black;padding:20px;font-weight:bold;}
+name,usn,ph { display:block; color:black;padding:2px;font-weight:bold;}
+About{background:url("img/b2.jpg");}{white-space:pre;}

@@ -1,0 +1,14 @@
+#i{
+	text-align:"center";
+	font-size:16;
+	font-family:cursive;
+	font-style:italic;
+}
+
+
+img{
+		background-color:orange;
+		border:2px solid black;
+		padding:4px;
+		margin-left:15px;
+   }

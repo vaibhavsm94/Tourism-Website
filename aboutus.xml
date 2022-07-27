@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="Info1.css" type="text/css"?>
+
+<About>
+<au>About Us
+</au>
+
+<info1>
+<head>About MakeMyTrip </head>
+<info>Nurtured from the seed of a single great idea - to empower the traveller - MakeMyTrip went on to pioneer the entire online travel industry in India. MakeMyTrip has revolutionised the travel industry over the years. This is the story of MakeMyTrip, India’s Online Travel Leader.
+
+MakeMyTrip.com, India’s leading online travel company was founded in the year 2000 by Deep Kalra. Created to empower the Indian traveller with instant booking and comprehensive choices, the company began its journey in the US-India travel market. It aimed to offer a range of best-value products and services along with cutting-edge technology and dedicated round-the-clock customer support.</info>
+</info1>
+
+<info2>
+<au>Our team </au>
+<info>
+<member1>
+<head>Member1</head>
+<name>Name:Goutham PC</name>
+<usn>USN:4JC13CS040</usn>
+<ph>9900811560</ph>
+
+</member1>
+<member2>
+<head>Member2</head>
+<name>Name:Sagar H Sankannanavar</name>
+<usn>USN:4JC13CS085</usn>
+<ph>9019801680</ph>
+</member2>
+<member3>
+<head>Member3</head>
+<name>Name:Vaibhav S M</name>
+<usn>USN:4JC13CS125</usn>
+<ph>9480149796</ph>
+</member3>
+</info>
+</info2>
+</About>
